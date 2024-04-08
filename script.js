@@ -25,6 +25,6 @@ createApp({
 
     },
     mounted() {
-        this.getRandomMails()
+        // this.getRandomMails()
     }
 }).mount('#app')
