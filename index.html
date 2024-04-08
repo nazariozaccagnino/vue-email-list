@@ -18,7 +18,8 @@
 <body>
     <div id="app">
         <div v-cloak>
-            <ul>
+            <div v-if="randomMails.length < 10">Contenuto in caricamento</div>
+            <ul v-else>
                 <li v-for="(item, index) in randomMails">{{item}}</li>
             </ul>
             <button @click="getRandomMails()">Genera 10 email</button>
